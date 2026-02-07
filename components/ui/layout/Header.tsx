@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { Sheet, SheetContent, SheetTrigger } from '../sheet'
 
 
@@ -32,9 +33,9 @@ const Header = () => {
         <ul className=' flex flex-col space-y-2'>
           {navigationLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className='text-gray-700 hover:text-gray-900'>
+              <Link href={link.href} className='text-gray-700 hover:text-gray-900'>
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))} 
         </ul>
